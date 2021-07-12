@@ -1,0 +1,231 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.home-box {
+  width: 600px;
+  min-height: 600px;
+  background: white;
+  opacity: 0.9;
+  border-radius: 18px;
+  box-shadow: 12px 12px 12px 12px rgb(0 0 0 / 15%);
+}
+
+.home-box:hover, .home-box:focus {
+  box-shadow: 2px 2px 12px 12px #e0d4e8;
+}
+
+button:focus {
+  outline: none;
+}
+
+.input-place {
+  border: none;
+  border-bottom: 2px solid #4b53bc;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 50%;
+  text-align: center;
+}
+
+.input-place:focus-visible {
+  outline: none;
+}
+
+.input-place:active {
+  border: none;
+  border-bottom: 2px solid blue;
+  padding: 10px;
+}
+
+.home-box-inner {
+  padding: 20px;
+}
+
+.home-heading {
+  text-align: center;
+  font-size: 44px;
+  background: linear-gradient(279.51deg, #134d82 24.53%, #4982b7 122.16%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.meeting-form {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+@keyframes sheen {
+  0% {
+    transform: skewY(-45deg) translateX(0);
+  }
+  100% {
+    transform: skewY(-45deg) translateX(12.5em);
+  }
+}
+
+.button {
+  padding: 8px 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #4b53bc;
+  border: 2px solid #4b53bc;
+  font-size: 18px;
+  display: inline-block;
+  border-radius: 30px;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.button::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 100%;
+  width: 3em;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -4.5em;
+  transform: skewX(-45deg) translateX(0);
+  transition: none;
+}
+
+.button:hover {
+  background-color: #4b53bc;
+  color: #fff;
+  border-bottom: 4px solid darken(#4b53bc, 10%);
+}
+
+.button:hover::before {
+  transform: skewX(-45deg) translateX(13.5em);
+  transition: all 0.5s ease-in-out;
+}
+
+.button:focus-visible {
+  outline: none;
+}
+
+.logo-container {
+  height: 380px;
+  width: 380px;
+  border-radius: 50%;
+  transform-style: preserve-3d;
+  margin-right: 100px;
+  background: white;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-image {
+  background: url('icons8-microsoft-teams-2019.jpg');
+  transform: translateZ(80px);
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.creater {
+  transform: translateZ(20px);
+}
+
+.creater>h2, span {
+  font-size: 20px;
+  color: #4b53bc;
+}
+
+#particles-js {
+  position: absolute;
+  background: #00356b;
+  height: 100%;
+  width: 100%;
+}
+
+.home__heading {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(1, 1, 1, 0.05);
+}
+
+.home__heading img {
+  height: 70px;
+}
+
+.join__meeing {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.meeting-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.join__meeing>.meeting-form label {
+  font-size: larger;
+  padding: 4px;
+}
+
+.join__meeing>.meeting-form input {
+  flex: 0.9;
+  margin: 10px;
+  padding: 5px;
+}
+
+.join__meeing button {
+  width: 10vw;
+}
+
+.create__meeting {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.create__meeting button {
+  width: 18vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .by {
+    font-size: smaller;
+  }
+  .home__heading h3 {
+    margin: 10px;
+    font-size: larger !important;
+  }
+  .home__heading img {
+    height: 40px;
+  }
+  .join__meeing button {
+    width: 250px;
+  }
+  .create__meeting button {
+    width: 300px;
+  }
+}

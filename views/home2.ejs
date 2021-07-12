@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="home.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <title>Microsoft Teams Clone</title>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <div class='home'>
+      <div class="logo-container" data-tilt>
+        <div class="logo-inner">
+          <div class="logo-image"></div>
+          <div class="creater">
+            <h2>Created by <span class="element"></span></h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-box">
+        <div class="home-box-inner">
+          <h3 class="home-heading">Microsoft Teams Clone</h3>
+
+          <div class="meeting-form">
+            <input
+              id="meeting-number"
+              type="text"
+              placeholder="Enter the meeting link here "
+              class="input-place"
+            />
+            
+              <button class="mt-2 button" type="button" onclick="joinMeeting()">
+                Join a Meeting
+              </button>
+            
+          </div>
+
+          <div class="create__meeting mx-auto">
+            <a href="/call" id="meeting-href">
+              <button class="button new-meeting">
+                Create New Meeting
+                <i class="fa fa-plus ml-3 mr-0" aria-hidden="true"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="particles/particles.js"></script>
+    <script src="particles/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+                <%- include('typed.js') %>
+                var typed = new Typed(".element", {
+                  strings: [ " ADITI AGRAWAL"],
+                  typeSpeed:60,
+                  backSpeed:60,
+                  loop:true
+                });
+
+                <%- include('tilt.jquery.js') %>
+                const joinMeeting = () => {
+                  var meetingId = $("#meeting-number").val();
+
+                  console.log(meetingId);
+                  window.location.href=`${meetingId}`;
+                };
+    </script>
+  </body>
+</html>
