@@ -1,10 +1,8 @@
-# Microsoft Teams Clone
+# Moodent
 
-Greetings to the readers! This is an interactive videoconferencing web app that is clone of the application named "MICROSOFT TEAMS". It is used to deliver a platform to the user in which one can easily communicate, share content, hold meetings/classes, chat with groups all around. 
+Greetings to the readers! This is an interactive videoconferencing web app that is  named "Moodent". It is used to deliver a platform to the user in which one can easily communicate, share content, hold meetings/classes, chat with groups all around. 
 
-`This project is built under Microsoft Engage Mentorship Program-2021 by Aditi Agrawal.`
-## Demo link of the project
-https://youtu.be/vtVxZeEzRT8
+
 
 ## Built Using: 
  1) EJS
