@@ -47,18 +47,18 @@ Greetings to the readers! This is an interactive videoconferencing web app that 
 ## Screenshots 📸
 
 ### Home Page
-![Home Page](https://user-images.githubusercontent.com/68473349/125276321-b8e54a00-e32d-11eb-9ca7-cc2a5a3be29c.png)
+![Home Page]()
 
 ### During the Video call
-![on Call](https://user-images.githubusercontent.com/68473349/125280440-ac172500-e332-11eb-9be2-9e30b0869734.png)
+![on Call]()
 
 ### Chat Box
-![Chat](https://user-images.githubusercontent.com/68473349/125281102-732b8000-e333-11eb-9eef-52505b22d840.png)
+![Chat]()
 
 ### Screenshare
-![ScreenShare](https://user-images.githubusercontent.com/68473349/125281369-c4d40a80-e333-11eb-8671-52501b976f34.png)
+![ScreenShare]()
 ### Floating Record Block Button
-![Float Record](https://user-images.githubusercontent.com/68473349/125281726-3318cd00-e334-11eb-84cc-3f56284c1220.png)
+![Float Record]()
 
 ## Agile Methodology Implementation
 
@@ -72,25 +72,9 @@ Greetings to the readers! This is an interactive videoconferencing web app that 
 
 You have to install [Node.js](https://nodejs.org/en/) in your machine.
 
-## How to run this Project on Local System ?
-
-* Download the Zip. 
-* Extract the folder
-* Open the above folder on any editor you prefer to use. Visual Studio Code was used for this project.
-* In script.js file, change the port of peer variable. Replace it from '443' to '3030'
-* Open the terminal and check the directory and path.
-* Install essential dependencies of node by running the command "npm i"
-* Run command "node server.js"
-* Open Google Chrome (preferred) and go to the link "localhost:3030/"
-* Copy this link and open it in a new tab.
-* Wohoo! You can see your peer. You managed to run the webapp on your local system.
-
-## Platform Used to deploy the WebApp:
-`Heroku`
-
 
 ## Link and Steps to run the deployed App :
-Link: https://teams-msclone.herokuapp.com/
+Link: will come soon
 
 <br />Steps:
 * `Open` the above link in your browser.
